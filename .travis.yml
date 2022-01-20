@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t greshmashaji/docker-react -f Dockerile.dev .
+  - docker build -t greshmashaji/docker-react -f Dockerfile.dev .
 
 script:
   - docker run greshmashaji/docker-react npm run test -- --coverage
